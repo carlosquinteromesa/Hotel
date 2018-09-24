@@ -1,0 +1,9 @@
+.parallax-container{
+    bottom: 4pc;
+    width: 100%;
+    height: 600px;
+}
+.section{
+    position: relative;
+    bottom: 4pc;
+}

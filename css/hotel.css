@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    background-image: url(http://rumbosf.com/wp-content/uploads/2017/09/Depositphotos_125641586_m-2015.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.nav{
+    background-color: #00000017 !important;
+}
+.lg-admin img{
+    width: 64px;
+}
+#nav-mobile a{
+    color: rgb(0, 0, 0);
+}
+.bottom-agre{
+    text-align: center;
+    padding-top: 20px
+}
+.img-perfil{
+    width: 217px;
+}
+.card .card-image .card-title{
+    color: black;
+    font-weight: 500;
+    top: 185px;
+    max-width: 300px;
+    width: 256px;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: black;
+    font-weight: 500;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+    color: aqua;
+}
+.card .card-content {
+    padding: 24px;
+    width: 400px;
+    border-radius: 0 0 2px 2px;
+}
+.cont-detal{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+}
+.detalles{
+    position: relative;
+    width: 395px;
+    display: inline-block;
+}
+
+a {
+	cursor:pointer;
+}
+#fondo {
+	width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 990;opacity: 0.8;background:#000;
+}
+#flotante {
+	z-index: 999; border: 8px solid #fff; margin-top: -756px; margin-left: -153px; top: 50%; left: 50%; padding: 12px; position: fixed; width: 265px; background-color: #fff; border-radius: 3px;
+}
+.cerrar-ventana{
+    bottom: 100%;
+    border-radius: 50%;
+    border: solid 2px;
+    color: white;
+    left: 103%;
+    position: absolute;
+}
+
