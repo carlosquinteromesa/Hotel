@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#nav-mobile a{
+    color: white;
+}
+
+
+.navegador{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent !important;
+}
+.navegador li{
+    display: inline-block;
+    margin-left: 63px;
+    padding: 10px;
+    border-radius: 45%;
+    margin-top: 35px;
+}
+.navegador li:hover{
+    background-color: rgba(194, 194, 194, 0.151);
+}
+.navegador li a{
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+}
+.navegador li:active a{
+    border-bottom: solid;
+}
 .parallax-container{
     bottom: 4pc;
     width: 100%;
@@ -6,4 +39,51 @@
 .section{
     position: relative;
     bottom: 4pc;
+}
+#borde_superior1{
+    border-top: solid 10px green;
+}
+#borde_superior2{
+    border-top: solid 10px rgb(255, 238, 0);
+}
+#borde_superior3{
+    border-top: solid 10px rgb(255, 153, 0);
+}
+.seleccionar{
+    text-align: center;
+    position: relative;
+    bottom: 170px;
+}
+.seleccionar div{
+    position: relative;
+    width: 320px;
+    z-index: 3;
+    display: inline-block;
+    height: 106px;
+    margin-left: 115px;
+    background-color: white;}
+.seleccionar div img{
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transform: translateY(-105px);
+    opacity: 0;    
+}
+.seleccionar div:hover img{
+    transform: translateY(0);
+    opacity: 1;
+}
+.promo{
+    position: absolute;
+    width: 100%;
+    top: 172%
+}
+.contenedor{
+    margin: 150px 0px 0px 150px;
+    text-align: justify;
+    width: 30pc;
+}
+.contenedor div img{
+    width: 300px;
+    display: inline-block
 }

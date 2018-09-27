@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/materialize.min.css">
-    <link rel="stylesheet" href="../css/hotel.css">
+    <!-- <link rel="stylesheet" href="../css/hotel.css"> -->
     <link rel="stylesheet" href="../css/inicio.css">
     <title>Inicio</title>
 </head>
 <body>
     <header>
-            <nav class="nav">
-                    <div class="bar nav-wrapper">
-                    <a href="../hotel.html" class="lg-admin brand-logo right"><img src="../asset/lg-admin.png" alt=""></a>
-                      <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="sass.html">Reservar</a></li>
+                  <div class="navegador">
+                      <ul>
+                        <li class="active"><a class="active" href="#">Inicio</a>
+                        <li><a href="../hotel.html">Reservar</a></li>
                         <li><a href="badges.html">Precios</a></li>
                         <li><a href="collapsible.html">Registrarse</a></li>
                       </ul>
                     </div>
-                  </nav>
 
                   <div class="parallax-container">
                         <div class="parallax"><img src="../asset/Habitacion1.jpeg"></div>
@@ -39,27 +38,39 @@
                         <div class="parallax"><img src="../asset/Habitacion2.jpeg"></div>
                       </div>
                       
-                      <div>
-                            <div class="row">
-                                    <div class="col s12">
-                                      <ul class="tabs">
-                                        <li class="tab col s3"><a href="#test1">imagen 1</a></li>
-                                        <li class="tab col s3"><a class="active" href="#test2">imagen 2</a></li>
-                                        <li class="tab col s3 disabled"><a href="#test3">imagen 3</a></li>
-                                        <li class="tab col s3"><a href="#test4">imagen 4</a></li>
-                                      </ul>
-                                    </div>
-                                    <div id="test1" class="col s12"><img src="http://2.bp.blogspot.com/-lIL0DPwOc4c/UisNuy8ePjI/AAAAAAAADp0/936fjGqc2mY/s1600/fshk2.jpg" alt=""></div>
-                                    <div id="test2" class="col s12"><img src="http://www.elmundoenmimaleta.com/wp-content/uploads/2013/08/tribe-hotel.jpg" alt=""></div>
-                                    <div id="test3" class="col s12"><img src="#" alt=""></div>
-                                    <div id="test4" class="col s12"><img src="#" alt=""></div>
-                                  </div>
+                      <div class="seleccionar">
+                            <div data-aos="fade-right" id="borde_superior1">
+                              <h3>Hoteles</h3>
+                              <img src="https://mediavideo.blastingnews.com/p/4/2018/05/24/96eadc15-c830-4ea3-8069-0a324b8501c1.jpg" alt="">
+                            </div>
+                            <div data-aos="fade-up" id="borde_superior2">
+                              <h3>Habitaciones</h3>
+                              <img src="https://okdiario.com/img/viajes/2016/11/19/convertir-el-dormitorio-en-una-suite.jpg" alt="">
+                            </div>
+                            <div data-aos="fade-left" id="borde_superior3">
+                              <h3>Restaurantes</h3>
+                              <img src="https://img.peru21.pe/files/ec_article_multimedia_gallery/uploads/2017/10/25/59f0fad00f10a.jpeg" alt="">
+                            </div>
+                      </div>
+                      <div class="promo">
+                        <div class="contenedor">
+                          <h3>Habitaciones mas utilizadas en los ultimos dias</h3>
+                            <div>
+                              <img src="https://www.parkpiolets.com/content/imgsxml/galerias/panel_habitaciones/6/des-0016-pioletspark-doblepremium320.jpg" alt="">
+                              <img src="https://www.fourseasons.com/content/dam/fourseasons/images/web/BHA/BHA_034_aspect16x9.jpg" alt="">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxjMNFasSGVb9vN0O2Zs3tzINIACbDWDgv5CiPO6Epn-CowOv" alt="">
+                            </div>
+                        </div>
+                      </div>
+
 
                       </div>
     </header>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/materialize.min.js"></script>
     <script src="../js/inicio.js"></script>
+    <script src="../js/hotel.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
