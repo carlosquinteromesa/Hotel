@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.menu {
+    background-color:rgb(255, 255, 255);
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul>li{
+display: inline-block;
+}
+.menu ul li a{
+    color:rgb(10, 10, 10);
+    display: block;
+    padding:20px 62px 20px 62px;
+    margin: 0 0px;
+    
+}
+.menu ul li a:hover{
+    align-self: center;
+    background-color: #297fb99c;
+    box-sizing: border-box;
+}
+.active{
+    background-color: #297fb99c;
+    border-bottom: solid #0c0c0c;
+    box-sizing: border-box;
+}
+
+.imgCC{
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 80px;
+    width: 90px;
+}
+.btn1{    
+    padding: 13px 35px 13px 35px;
+    color: #0984e3;
+    background-color: transparent;
+    box-shadow: 0px 0px transparent;
+    padding:0 40px;
+    border-radius: 100px ;
+    border: 1.5px #0984e3 solid; 
+    font-size: 13px;
+}.clase6 .row .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel.carousel-slider .carousel-item{
+    padding: 100px 0;
+}
+.clase6{
+    background: url(../asset/slider1.jpg) center center no-repeat #333844;
+}
+.imgslide1,.imgslide2, .imgslide3{
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+}
+.imgslide1{
+    background: url(../asset/slider1.jpg);
+    background-size: cover;
+}
+.imgslide2{
+    background: url(../asset/slider2.jpg);
+    background-size: cover;
+}
+.imgslide3{
+    background: url(../asset/slider3.jpg);
+    background-size: cover;
+}
+.arrowright i, .arrowleft i{
+    color: rgba(255,255,255,1)
+}
+.arrowright,.arrowleft{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.arrowleft{
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(-80px);
+}
+.arrowright{
+    right: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(80px);
+}
+.carousel:hover .arrowright, .carousel:hover .arrowleft{
+    opacity: 1;
+    transform: translateX(0);
+}
+.tabl{
+    width: 95% !important;
+    text-align: center;
+    margin-left: 21px;
+    margin-top: 30px;
+}
