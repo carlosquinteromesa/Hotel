@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/Recepcionista.css">
+    <title>HOTEL</title>
+</head>
+<body>
+    <header class="contenedor">
+            <nav class="nav">
+                    <div class="bar nav-wrapper">
+                      <a href="#" class="lg-admin brand-logo right"><img src="asset/lg-admin.png" alt=""></a>
+                      <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="pages/inicio.html">Inicio</a></li>
+                        <li><a href="#">Reservar</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Registrarse</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                  <div class="bottom-agre">
+                        <a onClick="flotante(1)" class="btn-floating btn-large pulse"><i class="material-icons">add</i></a>
+                  </div>
+                  <div>
+                      <h3>Lista de Recepcionistas</h3>
+                  </div>
+<!-- ___________________________________detalles del recepcionista_________________________ -->
+                  <div class="row">
+                        <div class="col s12 m7">
+                          <div class="card">
+                            <div class="cont-detal">
+                            <div class="img-perfil card-image">
+                              <img  src="asset/lg-admin.png">
+                              <span class="nombre-perfil card-title">Sebastian Ubaque</span>
+                            </div>
+                            <div class="card-content">
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">Leer Mas</a>
+                            </div>
+                            </div>
+                            <div class="detalles">
+                                  <ul class="collection">
+                                          <li class="collection-item avatar">
+                                            <i class="material-icons circle">assignment_ind</i>
+                                            <span class="title">Cargo</span>
+                                            <p>Recepcionista de habitaciones
+                                            </p>
+      
+                                          </li>
+                                          <li class="collection-item avatar">
+                                            <i class="material-icons circle">local_phone</i>
+                                            <span class="title">Telefono</span>
+                                            <p>+57 3138141312
+                                            </p>
+                                          </li>
+                                          <li class="collection-item avatar">
+                                            <i class="material-icons circle green">local_post_office</i>
+                                            <span class="title">Correo</span>
+                                            <p>hotelesparatodos@hoteles.com <br>
+
+                                            </p>
+                                          </li>
+                                          <li class="collection-item avatar">
+                                            <i class="material-icons circle red">location_on</i>
+                                            <span class="title">Ubicacion</span>
+                                            <p>San Gil <br>
+                                               Fijo
+                                            </p>
+                                          </li>
+                                        </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                                               
+    </header>
+                          <div id="contenedor" style="display:none">
+            
+                        <div id="flotante"><h1>ventana flotante</h1>
+                        <div ><a onClick="flotante(2)"><i class="material-icons black cerrar-ventana">close</i></a></div>
+                        </div>
+                        
+                        <div id="fondo"></div>
+                        
+                        </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/Recepcionista.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <!-- ________________________ventana flotante_______________________ -->
+    <script>
+      function flotante(tipo){
+        
+        if (tipo==1){
+          $('#contenedor').show();
+          $('#flotante').animate({
+            marginTop: "-152px"
+          });
+        }
+        if (tipo==2){
+          $('#flotante').animate({
+            marginTop: "-756px"
+          });
+          setTimeout(function(){
+            $('#contenedor').hide();
+            
+          },500)
+        }
+        
+      }
+      </script>
+            
+
+            
+
+
+</body>
+</html>
