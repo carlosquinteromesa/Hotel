@@ -16,47 +16,45 @@
 </head>
 <body>
 
-    <div class="menu">    
-        <ul>
-            <img class="imgCC" src="../asset/logo.png">
-            <li><a href="">habitaciónes</a></li>
-            <li><a href="">restaurantes</a></li>
-            <li><a href="" style="margin-left: 300px;">ingresar</a></li>
-            <li><a href="" class="btn1">registrarse</a></li>
-        </ul>
-    </div>
-    <section class="clase6">
-            <div class="row">
-                <div class="col s12 ">
-                    <div class="carousel carousel-slider center">
-                        <div class="carousel-item center-align" href="#one!">
-                            <div class="imgslide1 circle"></div>
-                            <h2>"Lorem ipsum dolor sit amet, nullam lucia nisi."</h2>
-                            <h5 class="light grey-text text-lighten-3">PETER FINLAN, PRODUCT DESIGNER</h5>
-                        </div>
-                    
-                        <div class="carousel-item center-align" href="#two!">
-                            <div class="imgslide2 circle"></div>
-                            <h2>"Nunc vel maximus purus. Nullam ac urna ornare."</h2>
-                            <h5 class="light grey-text text-lighten-3">MANOELA ILIC, FOUNDER @ CODROPS.</h5>
-                        </div>
-                    
-                        <div class="carousel-item center-align" href="#three!">
-                            <div class="imgslide3 circle"></div>
-                            <h2>"Nullam ac urna ornare, ultrices nisl ut, lacinia nisi."</h2>
-                            <h5 class="light grey-text text-lighten-3">BLAZ ROBAR, PIXEL GURU</h5>
-                        </div>
-                        <div class="arrowleft">
-                            <i class="medium material-icons">chevron_left</i>
-                        </div>
-                        <div class="arrowright">
-                            <i class="medium material-icons">chevron_right</i>
-                        </div>
+    <header class="fon" >
+        <div class="navbar-fixed">
+            <nav class="transparent">
+                <div class="container">
+                    <div class="row">
+                    <div class="col s2">
+                    <a href="#"><img class="lo" src="../asset/logo-hotel.png" alt=""></a>
+                    </div>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="">Habitaciones</a></li>
+                    <li><a href="">Restaurantes</a></li>
+                    </ul>
+                    <ul class="logueo right"> 
+                    <li><a href="">Ingresar</a></li> 
+                    <li><a href="" class="btn">Registrar</a></li> 
+                    </ul>
                     </div>
                 </div>
-            </div>
-    </section>
-    <section class="container" style="background-color: #0984e3;">
+            </nav>
+        </div>
+    </header>
+        
+    <div class="slider">
+        <ul>
+            <li>
+             <img src="../asset/slider1.jpg" alt="">
+            </li>
+            <li>
+             <img src="../asset/slider2.jpg" alt="">
+            </li>
+            <li>
+             <img src="../asset/slider3.jpg" alt="">
+            </li>
+            <li>
+             <img src="../asset/slider4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <section class="container" style="background-color: #ae8d2f;border: 2px solid white;">
         <table class="tabl" style=" border:5; background-color: white;" >
             <tr>
               <th>         
@@ -89,6 +87,8 @@
             </tr>
         </table>
     </section>
-   <script src="../js/main1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/main1.js"></script>       
 </body>
 </html>
