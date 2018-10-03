@@ -13,17 +13,19 @@
     margin-left: 63px;
     padding: 10px;
     border-radius: 45%;
+    transition-duration: 0.5s;
     margin-top: 35px;
 }
-.navegador li:hover{
-    background-color: rgba(194, 194, 194, 0.151);
+.navegador li:hover a{
+    color: rgb(252, 227, 0);
 }
 .navegador li a{
     color: white;
     font-size: 100%;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
-.navegador li:active a{
+.navegador li a:active{
     border-bottom: solid;
 }
 .parallax-container{
@@ -37,13 +39,29 @@
 }
 .borde_superior1{
     border-top: solid 10px green;
+
 }
+.seleccionar .desple:hover.borde_superior1{
+    background-color: rgba(0, 128, 0, 0.575);
+    height: 86px;
+} 
 .borde_superior2{
     border-top: solid 10px rgb(255, 238, 0);
+
+    height: 86px;
 }
+.seleccionar .desple:hover.borde_superior2{
+    background-color: rgba(255, 238, 0, 0.644);
+    height: 86px;
+} 
 .borde_superior3{
     border-top: solid 10px rgb(255, 153, 0);
+    height: 86px;
 }
+.seleccionar .desple:hover.borde_superior3{
+    background-color: rgba(255, 153, 0, 0.61);
+    height: 86px;
+} 
 .seleccionar{
     text-align: center;
     position: relative;
@@ -51,6 +69,7 @@
     height:105px;
     bottom: 170px;
 }
+
 .seleccionar .desple{
     position: relative;
     width: 320px;
@@ -58,7 +77,7 @@
     cursor: pointer;
     z-index: 1;
     height: 7pc;
-    margin-left: 8%;
+    margin-left: 90px !important;
     background-color: white;
 }
 h3{
@@ -88,7 +107,6 @@ h3{
 }
 .contenedor{
     margin: 90px 0px 0px 150px;
-    text-align: justify;
     width: 30pc;
 }
 .contenedor div img{
@@ -110,12 +128,24 @@ h3{
 #espacio{
     margin-left: 25px;
 }
+.para{
+    overflow: hidden;
+    -webkit-box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+    box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+}
 .promo1 div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    transition-duration: 0.5s;
     position: relative;
+    
+}
+.promo1 div:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
 }
 .promo1 p{
     position:absolute;
@@ -143,7 +173,7 @@ h3{
 .infomacion .extra div,.deporte div{
     position: relative;
     width: 48%;
-    height: 444px;
+    height: 563px;
     float: left;
 }
 #titulo{
@@ -157,4 +187,54 @@ h3{
     width: 260px;
     margin-left: 49%;
     text-align: left;
+}
+/* .carrusel{
+    background-image: url(http://www.propiedadespyj.cl/upload/slide/325534-wd.header.1400x400.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%
+} */
+.galeria{
+    position: absolute;
+    font-size: 30px;
+    left: 20px;
+    margin: 0px;
+}
+.carousel .carousel-item>img {
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+-moz-box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
+}
+.carrusel a span{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(168, 167, 167, 0.685);
+    transform: translateY(-306px);
+    display: inline-block;
+    opacity: 0;
+}
+.carrusel a span i{
+    font-size: 100px;
+    position: absolute;
+    left: 140px;
+    top: 90px
+}
+.carousel a:hover span{
+    opacity: 1;
+}
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: -55px;
+    left: 0px;
+}
+.fadter{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(61, 61, 61);
 }

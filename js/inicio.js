@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     AOS.init({ once: true })
 
+    var carrucel = document.querySelectorAll('.carousel');
+    var instancescarru = M.Carousel.init(carrucel);
 
 
   });
