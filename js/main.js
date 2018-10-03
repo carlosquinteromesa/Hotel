@@ -43,4 +43,20 @@ $formRegistro.addEventListener('submit', async (event) =>{
           }
     } else swal('Ooops...', 'Las contraseñas no coinciden', 'error')
                     //esto es el login
+
+    
+})
+
+const $formLogin = document.querySelector('#login')
+$formLogin.addEventListener('submit', async (event) =>{
+    event.preventDefault()
+    const formlog = new FormData($formLogin)
+    const datalog = await firebase.auth().signInWithEmailAndPassword(formlog.get('usuario'), formlog.get('contra')).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+        // ...
+      });
+      location.href ="pages/inicio.html";
 })
