@@ -22,28 +22,20 @@
         
         <div class="formulario">
             <h2>Crea tu Cuenta</h2>
-            <form action="#">
-                <input type="text" placeholder="Nombre" required id="nombre">
+            <form id="registro">
+                <input type="text" placeholder="Nombre"  required name="nombre">
                 
-                <input type="text" placeholder="Apellido" required id="apellido">
+                <input type="text" placeholder="Apellido" required name="apellido">
 
-                <input type="text" placeholder="Usuario" required id="creusuario">
-                
-                <input type="email" placeholder="E-mail" required id="email">
-                
-                <input type="email" placeholder="Confirmacion del E-mail" required id="conemail">
+                <input type="email" placeholder="E-mail" required name="email">
 
-                <input type="text" placeholder="Teléfono" required id="telefono">
+                <input type="password" placeholder="Contraseña" required name="contrasena">
+        
+                <input type="number" placeholder="Celular" required name="celular">
 
-                <input type="text" placeholder="Celular" required id="celular">
+                <input type="text" placeholder="Cedula de ciudadania" required name="cedula">
 
-                <input type="text" placeholder="Indicativo" required id="indicativo">
-
-                <input type="text" placeholder="Cedula de ciudadania" required id="cedula">
-
-                <input type="password" placeholder="Contraseña" required id="contraseña">
-
-                <input type="password" placeholder="Confirmar Contraseña" required id="concontraseña">
+                <input type="password" placeholder="Confirmar Contraseña" required name="concontrasena">
                 
                 <input type="submit" value="Registrarse">
             </form>
@@ -52,6 +44,8 @@
             <a href="#">Olvide mi Contraseña?</a>
         </div>
     </div>
+    <script src="js/firebase.js"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>    
     <script src="js/main.js"></script>
 </body>

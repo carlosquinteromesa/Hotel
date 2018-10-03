@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Work+Sans');
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,7 @@ body {
     line-height: 1;
 }
 .contenedor-form input[type="text"],
+.contenedor-form input[type="number"],
 .contenedor-form input[type="password"],
 .contenedor-form input[type="email"] {
     outline: none;
@@ -120,4 +122,7 @@ body {
 
 .contenedor-form .formulario:nth-child(2) {
     display: block;
+}
+.swal-modal{
+    font-family:'Hind', sans-serif; 
 }
