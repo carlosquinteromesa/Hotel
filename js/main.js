@@ -57,6 +57,7 @@ $formLogin.addEventListener('submit', async (event) =>{
         var errorMessage = error.message;
         console.log(errorCode, errorMessage)
         // ...
+        location.href ="pages/inicio.html";
       });
-      location.href ="pages/inicio.html";
+      
 })
