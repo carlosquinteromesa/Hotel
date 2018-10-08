@@ -10,21 +10,82 @@
     background-size: 100%;
     width: 100%;
 }
-.nav{
-    background-color: #00000017 !important;
+.navegador{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    background-color: #191E28 !important;
+    transition-duration: 0.5s;
 }
-.lg-admin img{
-    width: 64px;
+.navegador:hover{
+ height: 150px;
 }
-#nav-mobile a{
-    color: rgb(0, 0, 0);
+.wrapper{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
 }
-.bottom-agre{
+.navegador:hover .wrapper{
+    width: 80%;
+    height:100%; 
+}
+.icon_login{
+    position: relative;
+    left: 100%;
+    float: left;
     text-align: center;
-    padding-top: 20px
+    line-height: 70px;
 }
-.img-perfil{
-    width: 217px;
+.login{
+font-size: 50px;
+line-height: 70px;
+transition-duration: 0.5s;
+}
+.navegador:hover .login{
+    line-height: 150px;
+}
+.holse li {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    line-height: 70px;
+    height: 70px;
+}
+.holse li:hover a{
+     padding-top: 60px;
+    border-top: solid 5px;
+}
+.navegador:hover .holse li{
+    text-align: center;
+    height: 100%;
+    line-height: 150px;
+}
+.indicador .holse li a{
+    color: #039be59c;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.active .pri{
+    color: #039be5 !important;
+    padding-top: 20px;
+    border-top: solid 5px;
+}
+.navegador:hover  .active .pri{
+    color: #039be5 !important;
+    padding-top: 60px;
+}
+
+
+
+
+
+.bottom-agre{
+  text-align: center;
+    padding-top: 20px
 }
 .card .card-image .card-title{
     color: black;

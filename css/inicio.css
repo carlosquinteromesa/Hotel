@@ -1,33 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Mali');
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mali', cursive;
+    padding: 0px;
+    margin: 0px
 }
+/* ________________barra de navegacioin_______________________________ */
 .navegador{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    z-index: 99;
-    background-color: transparent !important;
-}
-.navegador li{
-    display: inline-block;
-    margin-left: 63px;
-    padding: 10px;
-    border-radius: 45%;
+    height: 70px;
+    z-index: 1;
+    background-color: #191E28 !important;
     transition-duration: 0.5s;
-    margin-top: 35px;
 }
-.navegador li:hover a{
-    color: rgb(252, 227, 0);
+.navegador:hover{
+ height: 150px;
 }
-.navegador li a{
-    color: white;
-    font-size: 100%;
+.wrapper{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
+}
+.navegador:hover .wrapper{
+    width: 80%;
+    height:100%; 
+}
+.icon_login{
+    position: relative;
+    left: 100%;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+}
+.login{
+font-size: 50px;
+line-height: 70px;
+transition-duration: 0.5s;
+}
+.login:hover{
+    color: white}
+.navegador:hover .login{
+    line-height: 150px;
+}
+.holse li {
+    position: relative;
+    text-align: center;
     cursor: pointer;
     transition-duration: 0.5s;
+    line-height: 70px;
+    height: 70px;
 }
-.navegador li a:active{
-    border-bottom: solid;
+.holse li:hover a{
+     padding-top: 60px;
+    border-top: solid 5px;
 }
+.navegador:hover .holse li{
+    text-align: center;
+    height: 100%;
+    line-height: 150px;
+}
+.indicador .holse li a{
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.active .pri{
+    color: #039be5 !important  ;
+    padding-top: 20px;
+    border-top: solid 5px;
+}
+.navegador:hover  .active .pri{
+    color: #039be5 ;
+    padding-top: 60px;
+}
+
+
+
+
+
 .parallax-container{
     bottom: 4pc;
     width: 100%;
@@ -35,74 +87,17 @@
 }
 .section{
     position: relative;
-    bottom: 4pc;
+    top: 3pc;
 }
 .borde_superior1{
     border-top: solid 10px green;
-
-}
-.seleccionar .desple:hover.borde_superior1{
-    background-color: rgba(0, 128, 0, 0.575);
-    height: 86px;
-} 
-.borde_superior2{
-    border-top: solid 10px rgb(255, 238, 0);
-
-    height: 86px;
-}
-.seleccionar .desple:hover.borde_superior2{
-    background-color: rgba(255, 238, 0, 0.644);
-    height: 86px;
-} 
-.borde_superior3{
-    border-top: solid 10px rgb(255, 153, 0);
-    height: 86px;
-}
-.seleccionar .desple:hover.borde_superior3{
-    background-color: rgba(255, 153, 0, 0.61);
-    height: 86px;
-} 
-.seleccionar{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height:105px;
-    bottom: 170px;
 }
 
-.seleccionar .desple{
-    position: relative;
-    width: 320px;
-    float: left;
-    cursor: pointer;
-    z-index: 1;
-    height: 7pc;
-    margin-left: 90px !important;
-    background-color: white;
-}
-h3{
-    margin-bottom: 0;
-}
-.seleccionar div img{
-    width: 100%;
-    display: none;
-    overflow: hidden;
-    border-radius: 0px 0px 10px 10px;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    transform: translateY(-105px);
-    opacity: 0;    
-}
-.seleccionar .desple:hover img {
-    transform: translateY(0);
-    display: block;
-    transition-duration: 0.3s;
-    animation-duration: 0.3s;
-    opacity: 1;
-}
 .promo{
+    top: -138px;
     position: relative;
     width: 100%;
+    height: 544px;
     bottom: 189px;
 }
 .contenedor{
@@ -163,6 +158,8 @@ h3{
 }
 .infomacion{
     position: relative;
+    top: 50px;
+    display:block;
     width: 100%;
 }
 .infomacion .extra,.deporte{
@@ -180,12 +177,12 @@ h3{
     font-weight: 600;
     font-size: 35px;
     width: 398px;
-    margin-left: 38%;
+    margin-left: 10%;
 }
 #parrafo{
     font-size: 14px;
     width: 260px;
-    margin-left: 49%;
+    margin-left: 11%;
     text-align: left;
 }
 /* .carrusel{
@@ -234,7 +231,80 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
     left: 0px;
 }
 .fadter{
+    position: relative;
     width: 100%;
-    height: 300px;
+    top: 30px;
+    height: 250px;
     background-color: rgb(61, 61, 61);
+}
+.feadter_holse li {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    height: 70px;
+}
+.feadter_holse li:hover a{
+     padding-top: 20px;
+     color: #039be5;
+    border-top: solid 5px;
+}
+.feadter_holse li{
+    text-align: center;
+    height: 100%;
+}
+.feadter_indicador .feadter_holse li a{
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.active .feadter_pri{
+    color: #039be5 !important  ;
+    padding-top: 20px;
+    border-top: solid 5px;
+}
+.feadter_navegador:hover  .active .feadter_pri{
+    color: #039be5 ;
+    padding-top: 60px;
+}
+.container_fadter{
+    position: relative;
+    bottom: 10%;
+}
+.container_fadter div{
+    position: relative;
+    float: left;
+}
+.container_fadter div h1{
+    font-size: 15px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+.container_fadter div p{
+    position: relative;
+    color: rgba(255, 255, 255, 0.384);
+    font-size: 10px;
+    margin-left: 20px;
+}
+.R_Social i{
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.R_Social i:hover{
+    color: #039be5;
+}
+
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (min-width: 992px){
+
+@media only screen and (min-width: 1200px){
+    #espacio{
+        margin-left: auto;
+    }
 }
