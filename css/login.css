@@ -13,7 +13,42 @@ body {
     background-attachment: fixed;
     font-family: Roboto;
 }
+.bottom{
+    position: absolute;
+    margin-left: 60px;
 
+}
+.cont{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition-duration: 0.8s;
+    text-align: center;
+    background: #ff851b25;
+    line-height: 60px;
+}
+.cont a{
+    position: relative;
+    font-size: 57px;
+    height: 100%;
+}
+.cont a i{
+    font-size: 40px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transform: rotateY(360deg);
+    color: white;
+}
+.cont:hover{
+    background: #ff851b;
+}
+.cont:hover a i{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+/* -------------------------------------------------------------- */
 .contenedor-form {
     background: rgba(0,0,0,.7);
     max-width: 500px;
