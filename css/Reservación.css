@@ -1,77 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
 *{
     margin: 0;
     padding: 0;
-    font-size: 25px;
+    font-family: 'Mali', cursive;
+    /* font-size: 15px; */
 }
 body { 
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
 
-main {
-    flex: 1 0 auto;
-}
-nav {
-    color: #fff;
-    box-shadow: 0px 0px transparent;
+.navegador{
+    position: fixed;
     width: 100%;
-    transition: all .3s linear;
+    height: 70px;
+    z-index: 1;
+    background-color: #191E28 !important;
+    transition-duration: 0.5s;
 }
-ul li a:hover{
-    background-color: transparent;
-    color: rgb(255, 249, 249);
+.navegador:hover{
+ height: 150px;
 }
-.fon{
-    background-size: cover;
+.wrapper{
     position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
 }
-nav ul a{
-    color: white;
+.navegador:hover .wrapper{
+    width: 80%;
+    height:100%; 
 }
-nav>.container{
-    width: 90%;
-    padding: 28.5px 0 0 0;
+.icon_login{
+    position: relative;
+    left: 100%;
+    float: left;
+    text-align: center;
+    line-height: 70px;
 }
-nav>.container>.row{
-    margin-bottom: 0;
+.login{
+font-size: 50px;
+line-height: 70px;
+transition-duration: 0.5s;
 }
-.logueo{
-    margin-right: 40px;
+.login:hover{
+    color: white}
+.navegador:hover .login{
+    line-height: 150px;
 }
-.lo{
-    margin: 0;
-    width: 100px;
+.holse li {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    line-height: 70px;
+    height: 70px;
 }
-.logueo>li:nth-child(2)>a{
-    background-color: transparent;
-    box-shadow: 0px 0px transparent;
-    padding:0 40px;
-    border-radius: 50px;
-    border: 1.5px rgb(255, 255, 255) !important;    
-    margin: 0;
+.holse li:hover a{
+     padding-top: 60px;
+    border-top: solid 5px;
 }
-.btn:hover{
-    color: rgb(8, 8, 8);
-    background-color: rgb(255, 255, 255) !important;
-    border-color: rgb(255, 255, 255) !important; 
+.navegador:hover .holse li{
+    text-align: center;
+    height: 100%;
+    line-height: 150px;
+}
+.indicador .holse li a{
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 70px;
 }
 
-@keyframes efect {
-    0% { transform: translateY(0px);}
-    50% { transform: translateY(-10px);}
-    100% { transform: translateY(0px);}
+.active .pri{
+    color: #039be5 !important  ;
+    padding-top: 20px;
+    border-top: solid 5px;
 }
-.nav-scroll{
-    height: 100px;
-    background-color: #000000 !important;
+.navegador:hover  .active .pri{
+    color: #039be5 ;
+    padding-top: 60px;
 }
-nav>.container{
-    transition: all .3s linear;
-}
-.nav-scroll>.container{
-    padding: 13.5px 0;
-    border-bottom: none;
-}
+
 
 /*slider*/
 .clase6 .row .col{
@@ -122,4 +132,71 @@ nav>.container{
 .carousel:hover .arrowright, .carousel:hover .arrowleft{
     opacity: 1;
     transform: translateX(0);
+}
+.fadter{
+    position: relative;
+    width: 100%;
+    top: 30px;
+    height: 250px;
+    background-color: rgb(61, 61, 61);
+}
+.feadter_holse li {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    height: 70px;
+}
+.feadter_holse li:hover a{
+     padding-top: 20px;
+     color: #039be5;
+    border-top: solid 5px;
+}
+.feadter_holse li{
+    text-align: center;
+    height: 100%;
+}
+.feadter_indicador .feadter_holse li a{
+    color: white;
+    font-weight: 100;
+    line-height: 70px;
+}
+
+.active .feadter_pri{
+    color: #039be5 !important  ;
+    padding-top: 20px;
+    border-top: solid 5px;
+}
+.feadter_navegador:hover  .active .feadter_pri{
+    color: #039be5 ;
+    padding-top: 60px;
+}
+.container_fadter{
+    position: relative;
+    bottom: 10%;
+}
+.container_fadter div{
+    position: relative;
+    float: left;
+}
+.container_fadter div h1{
+    font-size: 15px;
+    margin-left: 20px;
+    color: white;
+    font-weight: 100;
+}
+.container_fadter div p{
+    position: relative;
+    color: rgba(255, 255, 255, 0.384);
+    font-size: 10px;
+    margin-left: 20px;
+}
+.R_Social i{
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.R_Social i:hover{
+    color: #039be5;
 }
