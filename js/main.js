@@ -47,6 +47,7 @@ $formRegistro.addEventListener('submit', async (event) =>{
     
 })
 
+
 const $formLogin = document.querySelector('#login')
 $formLogin.addEventListener('submit', async (event) =>{
     event.preventDefault()
