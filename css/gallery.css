@@ -9,7 +9,7 @@
                         /*BARRA DE NAVEGACION*/
 
 .navegador{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 70px;
     z-index: 1;
