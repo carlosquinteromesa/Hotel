@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Mali');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Mali', cursive;
-    /* font-size: 15px; */
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px
 }
-body { 
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
-}
+
+                        /*BARRA DE NAVEGACION*/
 
 .navegador{
     position: fixed;
@@ -83,56 +80,38 @@ transition-duration: 0.5s;
 }
 
 
-/*slider*/
-.clase6 .row .col{
-    padding-left: 0;
-    padding-right: 0;
-}
-.imgslide1,.imgslide2, .imgslide3{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-.imgslide1{
-    background: url(../asset/slider4.jpg);
-}
-.imgslide2{
-    background: url(../asset/slider2.jpg);
-}
-.imgslide3{
-    background: url(../asset/slider3.jpg);
-}
+      
 
-.arrowright i, .arrowleft i{
-    color: rgba(255,255,255,1)
-}
-.arrowright,.arrowleft{
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    cursor: pointer;
-    transition: all .3s linear;
-}
-.arrowleft{
-    left: 80px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    opacity: 0;
-    transform: translateX(-80px);
-}
-.arrowright{
-    right: 80px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    opacity: 0;
-    transform: translateX(80px);
-}
-.carousel:hover .arrowright, .carousel:hover .arrowleft{
-    opacity: 1;
-    transform: translateX(0);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /*footer*/
 .fadter{
     position: relative;
     width: 100%;
@@ -149,8 +128,8 @@ transition-duration: 0.5s;
     height: 70px;
 }
 .feadter_holse li:hover a{
-     padding-top: 20px;
-     color: #039be5;
+        padding-top: 20px;
+        color: #039be5;
     border-top: solid 5px;
 }
 .feadter_holse li{
