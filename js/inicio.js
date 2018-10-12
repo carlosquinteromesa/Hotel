@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if(window.screenY < 3060){
         var nav = document.querySelector('.navegador')
         var nav1 = document.querySelector('.feadter_indicador')
-        nav.classList.remove('oculto')        
+        nav.classList.remove('ver')        
         nav1.classList.add('oculto')
         nav1.classList.remove('ver')
       }

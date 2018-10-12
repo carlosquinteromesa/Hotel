@@ -141,6 +141,10 @@ transition-duration: 0.5s;
     font-weight: 100;
     line-height: 70px;
 }
+.feadter_indicador{
+    position: relative;
+    bottom: 132px;  
+}
 
 .active .feadter_pri{
     color: #039be5 !important  ;
@@ -153,7 +157,7 @@ transition-duration: 0.5s;
 }
 .container_fadter{
     position: relative;
-    bottom: 10%;
+    bottom: 166px;
 }
 .container_fadter div{
     position: relative;

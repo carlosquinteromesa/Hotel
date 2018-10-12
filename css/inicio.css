@@ -254,7 +254,6 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
     text-align: center;
     cursor: pointer;
     transition-duration: 0.5s;
-
     height: 70px;
 }
 .feadter_holse li:hover a{
@@ -319,56 +318,7 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
     color: #039be5;
 }
 /* -----------------bottones flotantes------------- */
-#flotante {
-    z-index: 999; 
-    top: 50%; 
-    left: 12%;
-    padding: 12px; 
-    position: fixed; 
-    width: 70%;
-    height: auto; 
-    border: solid 3px black;
-    background-color: #fff;
-    border-radius: 3px;
-}
-#flotante div{
-    position: relative;
-    width: 100%;
-}
-#flotante div img{
-    width: 300px;
-    height: 200px;
-    margin-left: 15px;
-    padding-bottom: 10px;
-}
-.cerrar-ventana{
-    border-radius: 50%;
-    bottom: 415px;
-    border: solid 2px;
-    cursor: pointer;
-    color: white;
-    left: 100%;
-    position: absolute;
-}
-.card .card-image .card-title{
-    color: black;
-    font-weight: 500;
-    top: 185px;
-    max-width: 300px;
-    width: 256px;
-}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
-    color: black;
-    font-weight: 500;
-}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-    color: aqua;
-}
-.card .card-content {
-    padding: 24px;
-    width: 400px;
-    border-radius: 0 0 2px 2px;
-}
+
 
 @media only screen and (max-width: 600px){
 
