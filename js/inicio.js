@@ -29,16 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', ()=>{
 
       console.log(window.scrollY)
-      if(window.scrollY > 3061){
+      if(window.scrollY > 3111){
         var nav = document.querySelector('.navegador')
         var nav1 = document.querySelector('.feadter_indicador')
         nav.classList.add('oculto')
         nav1.classList.add('ver')     
         nav1.classList.remove('oculto')
-      } else if(window.screenY < 3060){
+      } else if(window.screenY < 3110){
         var nav = document.querySelector('.navegador')
         var nav1 = document.querySelector('.feadter_indicador')
-        nav.classList.remove('ver')        
+        nav.classList.remove('oculto')  
         nav1.classList.add('oculto')
         nav1.classList.remove('ver')
       }

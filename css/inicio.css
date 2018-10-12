@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 *{
-    font-family: 'Mali', cursive;
+    font-family: 'Montserrat', sans-serif;
     padding: 0px;
     margin: 0px
 }
@@ -166,16 +166,32 @@ transition-duration: 0.5s;
     display:block;
     width: 100%;
 }
-.infomacion .extra,.deporte{
+.infomacion .extra{
     position: relative;
+    padding: 0;
     width: 100%;
     max-width: 100%;
 }
-.infomacion .extra div,.deporte div{
+.deporte{
+    position:relative;
+    padding: 0px !important;
+
+
+}
+.infomacion .extra div {
     position: relative;
-    width: 48%;
+    width: 50%;
+    padding: 0px;
     height: 563px;
     float: left;
+}
+.extra{
+
+}
+.deporte div{
+    padding: 0px !important;
+    height: 563px;
+
 }
 #titulo{
     font-weight: 600;
@@ -200,6 +216,28 @@ transition-duration: 0.5s;
     cursor: pointer;
     left: 20px;
     margin: 0px;
+    animation: sube-y-bajados 9s alternate infinite linear;
+}
+@keyframes sube-y-bajados {
+    0% {
+        color: #039be5;
+        transform: translateY(10px);
+    }
+    25%{
+        color: rgb(0, 255, 0)
+    }
+    50%{
+        color: rgb(255, 251, 0)
+    }
+    75%{
+        color: #0004ff
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+        transform: translateY(10px);
+    }
+
 }
 .galeria1 {
     color: black;
@@ -248,7 +286,10 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
     height: 250px;
     background-color: rgb(61, 61, 61);
 }
-
+.feadter_holse{
+    position: absolute;
+    width: 100%;
+}
 .feadter_holse li {
     position: relative;
     text-align: center;
@@ -282,7 +323,7 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
 }
 .container_fadter{
     position: relative;
-    bottom: 10%;
+    top: 76px;
 }
 .container_fadter div{
     position: relative;
@@ -318,7 +359,9 @@ box-shadow: -4px 18px 42px 0px rgba(0,0,0,0.64);
     color: #039be5;
 }
 /* -----------------bottones flotantes------------- */
+@keyframes {
 
+}
 
 @media only screen and (max-width: 600px){
 
